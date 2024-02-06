@@ -56,24 +56,29 @@ https://kit.fontawesome.com/3b3c8e71e5.js"
           <article>
             <h3>Ou souhaitez-vous etre livré ?</h3>
             <label
-              ><input type="radio" name="delivery" />Mon adresse courante
+              ><input type="radio" name="delivery" checked />Mon adresse
+              courante
             </label>
             <label> <input type="radio" name="delivery" />Autre adresse </label>
             <h3>Options</h3>
             <label>
-              <input type="checkbox" />Suivi de livraison par sms (inclus)
+              <input type="checkbox" name="Sms" />Suivi de livraison par sms
+              (inclus)
             </label>
             <label>
-              <input type="checkbox" />Satisfait ou remboursé (+2 euros)
+              <input type="checkbox" name="Satisfaction" value="2" />Satisfait
+              ou remboursé (+2 euros)
             </label>
-            <label> <input type="checkbox" />Garanti 2 ans (+10 euros) </label>
+            <label>
+              <input type="checkbox" name="Garanti" />Garanti 2 ans (+10 euros)
+            </label>
           </article>
           <article>
             <h3>Adresse</h3>
             <label for="rue">Rue</label>
             <input type="text" id="rue" pattern="" />
             <label for="CP">Code postal</label>
-            <input type="text" id="CP" pattern="" />
+            <input type="number" id="CP" pattern="" />
             <label for="country">Ville</label>
             <input type="text" id="country" pattern="" />
             <h3>Informations complémentaires</h3>

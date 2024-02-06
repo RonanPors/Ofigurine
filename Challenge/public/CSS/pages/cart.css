@@ -87,7 +87,7 @@ h1 {
 .form__delivery article:nth-child(2) > input {
   background-color: #f8f8f8;
   border: none;
-  border-bottom: solid var(--secondary-color) 1px;
+  border-bottom: solid var(--third-color) 1px;
   height: 3vh;
   margin-bottom: 10px;
 }
