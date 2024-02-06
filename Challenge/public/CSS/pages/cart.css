@@ -37,22 +37,20 @@ h1 {
   flex-direction: column;
   justify-content: center;
   width: 75%;
-  border: solid black 2px;
 }
 
 .cart__main_form > h2 {
   padding-left: 15px;
-  padding-top: 30px;
+  padding-block: 30px;
 }
 .cart__main_form section {
-  padding: 15px;
+  padding-inline: 15px;
 }
 
 .cart__main_form section:nth-child(2) {
   display: flex;
   flex-direction: row;
   height: 50vh;
-  border: solid blue 2px;
 }
 
 .form__delivery article:nth-child(1) {
@@ -61,6 +59,7 @@ h1 {
   width: 50%;
   display: flex;
   flex-direction: column;
+  border-bottom: solid var(--third-color) 2px;
 }
 .form__delivery article:nth-child(2) {
   padding-right: 20px;
@@ -68,12 +67,7 @@ h1 {
   width: 50%;
   display: flex;
   flex-direction: column;
-}
-
-.form__delivery article > h2 {
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  border-bottom: solid var(--third-color) 2px;
 }
 
 .form__delivery article > h3 {
@@ -82,8 +76,23 @@ h1 {
   margin-block: 30px;
 }
 
-.form__delivery article > label {
+.form__delivery article:nth-child(1) > label {
   margin-block: 10px;
+}
+
+.form__delivery article:nth-child(2) > label {
+  margin-bottom: 10px;
+}
+
+.form__delivery article:nth-child(2) > input {
+  background-color: #f8f8f8;
+  border: none;
+  border-bottom: solid var(--secondary-color) 1px;
+  height: 3vh;
+  margin-bottom: 10px;
+}
+#comments {
+  height: 10vh;
 }
 
 /*________SECTION TOTAL________*/
@@ -93,8 +102,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .form__totalsection article:nth-child(2) {
