@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ronan PORS" />
+    <meta name="description" content="UX/UI Shop par PR" />
+    <meta name="keywords" content="Shop, UX/UI" />
+    <title>oFig | Panier</title>
+    <link rel="icon" type="image/png" href="../../public/asset/favicon.png" />
+    <link rel="stylesheet" href="../../public/CSS/fonts/fonts.css" />
+    <link rel="stylesheet" href="../../public/CSS/base/variables.css" />
+    <link rel="stylesheet" href="../../public/CSS/base/reset.css" />
+    <link rel="stylesheet" href="../../public/CSS/utils/object.css" />
+    <link rel="stylesheet" href="../../public/CSS/utils/keyframes.css" />
+    <link rel="stylesheet" href="../../public/CSS/layout/header.css" />
+    <link rel="stylesheet" href="../../public/CSS/pages/cart.css" />
+    <link rel="stylesheet" href="../../public/CSS/layout/footer.css" />
+    <script
+      src="
+https://kit.fontawesome.com/3b3c8e71e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="app__header fixed-top">
+      <section>
+        <figure>
+          <img src="../../public/asset/favicon.png" alt="logo de shop" />
+        </figure>
+        <span aria-label="conteneur du titre de l'application">oFig</span>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="../pages/shop.html">
+              <i class="fa-solid fa-shop"></i>
+            </a>
+          </li>
+          <li>
+            <a href="../pages/cart.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="cart__main page">
+      <header class="cart__main_header">
+        <h1>Votre paniers</h1>
+        <p>2 produits</p>
+      </header>
+      <form class="cart__main_form">
+        <section>
+          <article>
+            <h2>Préférences de livraison</h2>
+            <h3>Ou souhaitez-vous etre livré ?</h3>
+            <label
+              ><input type="radio" name="delivery" />Mon adresse courante
+            </label>
+            <label>
+              <input type="radio" name="delivery" />Mon adresse courante
+            </label>
+            <h3>Options</h3>
+            <label>
+              <input type="checkbox" />Suivi de livraison par sms (inclus)
+            </label>
+            <label>
+              <input type="checkbox" />Satisfait ou remboursé (+2 euros)
+            </label>
+            <label> <input type="checkbox" />Garanti 2 ans (+10 euros) </label>
+          </article>
+          <article>
+            <h3>Adresse</h3>
+            <label for="rue">Rue</label>
+            <input type="text" id="rue" pattern="" />
+            <label for="CP">Code postal</label>
+            <input type="text" id="CP" pattern="" />
+            <label for="country">Ville</label>
+            <input type="text" id="country" pattern="" />
+            <h3>Informations complémentaires</h3>
+            <label for="comments">interphone, bâtiment, etc.</label>
+            <input type="text" id="comments" pattern="" />
+          </article>
+        </section>
+        <section>
+          <article>
+            <p>Montant total à régler : <em>197€</em></p>
+          </article>
+          <article>
+            <button>Continuer vos achats</button>
+            <button>Valider et payer</button>
+          </article>
+        </section>
+      </form>
+    </main>
+    <footer class="app__footer fixed-bottom">
+      <p>oFig - toutes les images sont sous &copy SquareEnix</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+.shop__main {
+  flex-direction: column;
+  opacity: 0;
+  animation: shopShow 1000ms ease-in-out 3000ms forwards;
+}
+
+.shop__main > header {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+}
+
+.shop__main > header > h1 {
+  font-size: 18px;
+}
+
+.shop__main > section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.shop__main > section > article {
+  margin: 10px;
+  box-shadow: 1px 1px 5px gray;
+  width: 300px;
+  padding: 5px;
+}
+
+.shop__main > section > article > figure {
+  position: relative;
+}
+
+.shop__main > section > article > figure > figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-transform: uppercase;
+}
+.shop__main > section > article > figure > span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: greenyellow;
+}
+
+.shop__main > section > article > section {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop__main > section > article > section > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shop__main > section > article > section > button > section + section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shop__main > section > article > section span {
+  margin-inline: 2px;
+}
+.shop__main > section > article > section span:first-of-type {
+  text-decoration: line-through;
+  color: var(--secondary-color);
+}
+
+.shop__main > section > article span:last-of-type {
+  font-size: 18px;
+}
+
+/* trouver deux façons voire plus de cibler figure qui est le premier enfant d'article */
