@@ -2,7 +2,7 @@
 .cart__main {
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 92vh;
 }
 .cart__main_header {
   display: flex;
@@ -36,19 +36,109 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 75%;
+  border: solid black 2px;
 }
 
+.cart__main_form > h2 {
+  padding-left: 15px;
+  padding-top: 30px;
+}
 .cart__main_form section {
-  margin: 30px;
-}
-
-.cart__main_form section:nth-child(1) {
-  display: flex;
-  flex-direction: row;
+  padding: 15px;
 }
 
 .cart__main_form section:nth-child(2) {
   display: flex;
+  flex-direction: row;
+  height: 50vh;
+  border: solid blue 2px;
+}
+
+.form__delivery article:nth-child(1) {
+  padding-left: 20px;
+  padding-right: 40px;
+  width: 50%;
+  display: flex;
   flex-direction: column;
+}
+.form__delivery article:nth-child(2) {
+  padding-right: 20px;
+  padding-left: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__delivery article > h2 {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.form__delivery article > h3 {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-block: 30px;
+}
+
+.form__delivery article > label {
+  margin-block: 10px;
+}
+
+/*________SECTION TOTAL________*/
+
+.form__totalsection article:nth-child(1) {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+
+.form__totalsection article:nth-child(2) {
+  border-top: solid var(--third-color) 2px;
+  border-bottom: solid var(--third-color) 2px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.form__totalsection_article-shadow p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  height: 100%;
+  box-shadow: 0px 0px 15px 5px rgba(214, 214, 214, 0.4);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+.form__totalsection_article-shadow em {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.form__button-left {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 60%;
+  padding: 0 30px;
+}
+.form__button-right {
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 60%;
+  padding: 0 30px;
 }
