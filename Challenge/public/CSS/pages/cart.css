@@ -38,3 +38,17 @@ h1 {
   justify-content: center;
   width: 70%;
 }
+
+.cart__main_form section {
+  margin: 30px;
+}
+
+.cart__main_form section:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart__main_form section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
