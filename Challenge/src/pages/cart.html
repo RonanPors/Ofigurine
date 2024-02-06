@@ -76,14 +76,39 @@ https://kit.fontawesome.com/3b3c8e71e5.js"
           <article>
             <h3>Adresse</h3>
             <label for="rue">Rue</label>
-            <input type="text" id="rue" pattern="" />
+            <input
+              type
+              id="rue"
+              type="text"
+              pattern=".*\S+.*"
+              title="Veuillez saisir une adresse valide"
+              required
+            />
             <label for="CP">Code postal</label>
-            <input type="number" id="CP" pattern="" />
+            <input
+              id="CP"
+              type="number"
+              pattern="[0-9]{5}"
+              title="Veuillez saisir un code postal à 5 chiffres"
+              maxlength="5"
+              required
+            />
             <label for="country">Ville</label>
-            <input type="text" id="country" pattern="" />
+            <input
+              id="country"
+              type="text"
+              pattern="[a-zA-ZÀ-ÿ\s]+"
+              title="Veuillez saisir un nom de ville valide"
+              required
+            />
             <h3>Informations complémentaires</h3>
             <label for="comments">interphone, bâtiment, etc.</label>
-            <input type="text" id="comments" pattern="" />
+            <textarea
+              id="comments"
+              pattern=".*\S+.*"
+              title="Veuillez saisir un commentaire valide"
+              required
+            ></textarea>
           </article>
         </section>
         <section class="form__totalsection">

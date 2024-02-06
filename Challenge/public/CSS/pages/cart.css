@@ -93,6 +93,9 @@ h1 {
 }
 #comments {
   height: 10vh;
+  background-color: #f8f8f8;
+  border: none;
+  border-bottom: solid var(--third-color) 1px;
 }
 
 /*________SECTION TOTAL________*/
