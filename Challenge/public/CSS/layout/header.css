@@ -50,8 +50,12 @@
 .app__header > nav > ul {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .app__header > nav > ul > li {
   margin: 3px;
+}
+.icon-white {
+  color: white;
 }
