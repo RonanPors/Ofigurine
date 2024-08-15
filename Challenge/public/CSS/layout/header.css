@@ -22,7 +22,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: solid black 1px;
+  border: solid white 1px;
   overflow: hidden;
   margin-right: 10px;
 }
@@ -56,6 +56,19 @@
 .app__header > nav > ul > li {
   margin: 3px;
 }
-.icon-white {
+
+.app__header > nav > ul > li > a {
   color: white;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  .icon-white {
+    color: white;
+    margin-right: 10px;
+  }
+}
+
+.app__header > nav > ul > li > a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
 }

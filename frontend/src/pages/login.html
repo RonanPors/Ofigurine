@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Boris Rose" />
+    <meta
+      name="description"
+      content="Page du Shop de l'Application Shop, figurines de Tintin et Milou"
+    />
+    <meta name="keywords" content="Shop, figurines, Tintin et Milou" />
+    <title>Shop | Login Page</title>
+    <link rel="icon" type="image/png" href="../../public/assets/favicon.png" />
+    <link rel="stylesheet" href="../../public/css/fonts/font.css" />
+    <link rel="stylesheet" href="../../public/css/base/variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/reset.css" />
+    <link rel="stylesheet" href="../../public/css/utils/objects.css" />
+    <link rel="stylesheet" href="../../public/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="../../public/css/components/form.css" />
+    <link rel="stylesheet" href="../../public/css/layout/header.css" />
+    <!-- LA PAGE CHANGE !!!! donc plus de référence à landing.css -->
+    <link rel="stylesheet" href="../../public/css/pages/login.css" />
+    <link rel="stylesheet" href="../../public/css/layout/footer.css" />
+    <!-- SCRIPT JS  FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/3b3c8e71e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="app__header fixed-top">
+      <section>
+        <figure>
+          <img src="../../public/assets/favicon.png" alt="logo du site oFig" />
+        </figure>
+        <span aria-label="conteneur du titre de l'application"> oFig </span>
+      </section>
+      <!-- Input pour contrôler le menu burger -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="nav-menu">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-home fa-xl icon-white"></i>Acceuil
+            </a>
+          </li>
+          <li>
+            <a href="./shop.html">
+              <i class="fa-solid fa-shop fa-xl icon-white"></i>Shop
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="login__main page">
+      <form class="form">
+        <section class="form__inputs">
+          <article>
+            <label for="email"></label>
+            <input
+              id="email"
+              type="text"
+              pattern="[a-z0-9_.]{4,20}[@]{1}[a-z]{2,5}[.]{1}[a-z]{2,4}"
+              placeholder="Entrez votre email"
+              required
+              aria-required="true"
+            />
+          </article>
+
+          <article>
+            <label for="password"></label>
+            <input
+              id="password"
+              type="password"
+              pattern="[a-zA-Z0-9!?_\-.]{10,12}"
+              required
+              placeholder="Entrez votre mot de passe"
+              aria-required="true"
+            />
+          </article>
+
+          <article>
+            <label>
+              <small>maintenir ma session ouverte</small>
+              <input type="checkbox" checked aria-checked="true" />
+            </label>
+          </article>
+          <article>
+            <label for="role"> Vous êtes : </label>
+            <select id="role">
+              <option value="admin">Administrateur</option>
+              <option value="client">Client</option>
+            </select>
+          </article>
+        </section>
+
+        <section class="form__actions">
+          <button type="submit">Valider</button>
+          <button type="reset">Réinitialiser</button>
+        </section>
+        <section>
+          <small>Mot de passe oublié ?<a href="#">Cliquez ici</a></small>
+        </section>
+      </form>
+    </main>
+    <footer class="app__footer fixed-bottom">
+      <p>Toutes les images sont sous &copy; Pixabay</p>
+    </footer>
+  </body>
+</html>

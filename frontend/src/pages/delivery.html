@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Boris Rose" />
+    <meta
+      name="description"
+      content="Page du Shop de l'Application Shop, figurines de Tintin et Milou"
+    />
+    <meta name="keywords" content="Shop, figurines, Tintin et Milou" />
+    <title>Shop | Delivery Page</title>
+    <link rel="icon" type="image/png" href="../../public/assets/favicon.png" />
+    <link rel="stylesheet" href="../../public/css/fonts/font.css" />
+    <link rel="stylesheet" href="../../public/css/base/variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/reset.css" />
+    <link rel="stylesheet" href="../../public/css/utils/objects.css" />
+    <link rel="stylesheet" href="../../public/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="../../public/css/components/spinner.css" />
+    <link rel="stylesheet" href="../../public/css/components/sticker.css" />
+    <link rel="stylesheet" href="../../public/css/layout/header.css" />
+    <!-- LA PAGE CHANGE !!!! donc plus de référence à landing.css -->
+    <link rel="stylesheet" href="../../public/css/pages/delivery.css" />
+    <link rel="stylesheet" href="../../public/css/layout/footer.css" />
+    <!-- SCRIPT JS  FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/3b3c8e71e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <aside aria-label="les soldes" class="app__sticker">
+      <a href="./shop.html">soldes</a>
+    </aside>
+    <header class="app__header fixed-top">
+      <section>
+        <figure>
+          <img src="../../public/assets/favicon.png" alt="logo du site oFig" />
+        </figure>
+        <span aria-label="conteneur du titre de l'application"> oFig </span>
+      </section>
+      <!-- Input pour contrôler le menu burger -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="nav-menu">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-home fa-xl icon-white"></i>Accueil
+            </a>
+          </li>
+          <li>
+            <a href="./pages/delivery.html">
+              <i class="fa-solid fa-truck fa-xl icon-white"></i>Commande
+            </a>
+          </li>
+          <li>
+            <a href="./pages/login.html">
+              <i class="fa-solid fa-sign-in fa-xl icon-white"></i>Se connecter
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="delivery__main page">
+      <aside>
+        <p>Votre panier contient <em>3 produits</em></p>
+      </aside>
+      <form class="delivery-main__form">
+        <header>
+          <h2>Préférences de livraison</h2>
+        </header>
+        <section class="delivery-main__inputs-section">
+          <!-- RESPONSIVE FAIRE ATTENTION -->
+          <section class="delivery-main__inputs-section-one">
+            <section class="delivery-main__delivery-location">
+              <h3>Où souhaitez-vous être livré</h3>
+
+              <article class="delivery-main__input-article">
+                <label>
+                  <input
+                    type="radio"
+                    value="current-address"
+                    name="delivery-spot"
+                  />
+                  Mon adresse courante
+                </label>
+              </article>
+              <article class="delivery-main__input-article">
+                <label>
+                  <!--  Inutile de mettre un attribut for à l'élément label si
+                      l'input qui est contrôlé par le label est un enfant du label
+                    -->
+                  <input
+                    type="radio"
+                    value="other-address"
+                    name="delivery-spot"
+                    checked
+                  />
+                  Autre adresse
+                </label>
+              </article>
+            </section>
+            <section class="delivery-main__options">
+              <h3>Options</h3>
+              <article>
+                <label for="sms">
+                  <input type="checkbox" value="sms" checked id="sms" />
+                  Suivi de livraison par sms (inclus)
+                </label>
+              </article>
+              <article>
+                <label for="refund">
+                  <input type="checkbox" value="refund" id="refund" />
+                  Satisfait ou remboursé (+ 2 euros)
+                </label>
+              </article>
+              <article>
+                <label for="garantee">
+                  <input type="checkbox" value="garantee" id="garantee" />
+                  Garantie 2 ans (+ 10 euros)
+                </label>
+              </article>
+            </section>
+          </section>
+
+          <section class="delivery-main__inputs-section-two">
+            <section class="delivery-main__address" aria-labelledby="address">
+              <h3 id="address">Adresse</h3>
+              <section class="delivery-main__address-inputs">
+                <article>
+                  <label for="street"> Rue </label>
+                  <input id="street" type="text" />
+                </article>
+                <article>
+                  <label for="postal"> Code Postal </label>
+                  <input id="postal" type="text" pattern="[0-9]{5}" />
+                </article>
+                <article>
+                  <label for="city"> Ville </label>
+                  <input id="city" type="text" />
+                </article>
+              </section>
+            </section>
+            <section
+              class="delivery-main__complementary"
+              aria-labelledby="complementary"
+            >
+              <h3 id="complementary">Informations complémentaires</h3>
+              <article>
+                <label for="complementary-info"
+                  >interphone, bâtiment,etc
+                </label>
+                <textarea id="complementary-info"></textarea>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <hr />
+
+        <section class="delivery-main__amount-section">
+          <section>
+            <span aria-label="montant total à régler">
+              Montant total à régler :
+            </span>
+            <strong> 197 €</strong>
+          </section>
+        </section>
+        <footer class="delivery-main__footer">
+          <a href="./shop.html">Continuer vos achats</a>
+          <a href="./success.html">Valider et payer</a>
+        </footer>
+      </form>
+    </main>
+    <footer class="app__footer fixed-bottom">
+      <p>Toutes les images sont sous &copy; Pixabay</p>
+    </footer>
+  </body>
+</html>
