@@ -7,15 +7,19 @@
     <meta name="description" content="UX/UI Shop par BR" />
     <meta name="keywords" content="Shop, UX/UI" />
     <title>Shop | Landing Page</title>
-    <link rel="icon" type="image/png" href="../public/assets/favicon.png" />
-    <link rel="stylesheet" href="../public/css/fonts/font.css" />
-    <link rel="stylesheet" href="../public/css/base/variables.css" />
-    <link rel="stylesheet" href="../public/css/base/reset.css" />
-    <link rel="stylesheet" href="../public/css/utils/objects.css" />
-    <link rel="stylesheet" href="../public/css/utils/keyframes.css" />
-    <link rel="stylesheet" href="../public/css/layout/header.css" />
-    <link rel="stylesheet" href="../public/css/pages/landing.css" />
-    <link rel="stylesheet" href="../public/css/layout/footer.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./frontend/public/assets/favicon.png"
+    />
+    <link rel="stylesheet" href="./frontend/public/css/fonts/font.css" />
+    <link rel="stylesheet" href="./frontend/public/css/base/variables.css" />
+    <link rel="stylesheet" href="./frontend/public/css/base/reset.css" />
+    <link rel="stylesheet" href="./frontend/public/css/utils/objects.css" />
+    <link rel="stylesheet" href="./frontend/public/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="./frontend/public/css/layout/header.css" />
+    <link rel="stylesheet" href="./frontend/public/css/pages/landing.css" />
+    <link rel="stylesheet" href="./frontend/public/css/layout/footer.css" />
     <!-- SCRIPT JS  FONTAWESOME-->
     <script
       src="https://kit.fontawesome.com/3b3c8e71e5.js"
@@ -26,7 +30,10 @@
     <header class="app__header fixed-top">
       <section>
         <figure>
-          <img src="../public/assets/favicon.png" alt="logo du site oFig" />
+          <img
+            src="./frontend/public/assets/favicon.png"
+            alt="logo du site oFig"
+          />
         </figure>
         <span aria-label="conteneur du titre de l'application"> oFig </span>
       </section>
@@ -37,54 +44,41 @@
         <span></span>
         <span></span>
       </label>
-      <nav id="nav-menu">
+      <nav id="nav-menu" role="navigation">
         <ul>
           <li>
-            <a href="./index.html">
+            <a href="../../../index.html" aria-label="Aller à la page accueil">
               <i class="fa-solid fa-home fa-xl icon-white"></i>Accueil
             </a>
           </li>
           <li>
-            <a href="./pages/cart.html">
+            <a
+              href="./frontend/src/pages/shop.html"
+              aria-label="Acceder au magasin"
+            >
+              <i class="fa-solid fa-shop fa-xl icon-white"></i>Shop
+            </a>
+          </li>
+          <li>
+            <a href="./cart.html" aria-label="Acceder au panier">
               <i class="fa-solid fa-bag-shopping fa-xl icon-white"></i>Panier
             </a>
           </li>
           <li>
-            <a href="./pages/delivery.html">
+            <a
+              href="./delivery.html"
+              aria-label="Acceder à la commande en cours"
+            >
               <i class="fa-solid fa-truck fa-xl icon-white"></i>Commande
             </a>
           </li>
           <li>
-            <a href="./pages/login.html">
+            <a href="./login.html" aria-label="Aller à la page de connexion">
               <i class="fa-solid fa-sign-in fa-xl icon-white"></i>Se connecter
             </a>
           </li>
         </ul>
       </nav>
-      <!-- <nav>
-        <ul>
-          <li>
-            <a href="./pages/shop.html">
-              <i class="fa-solid fa-shop fa-xl icon-white"></i>Shop
-            </a>
-          </li>
-          <li>
-            <a href="./pages/cart.html">
-              <i class="fa-solid fa-bag-shopping fa-xl icon-white"></i>Panier
-            </a>
-          </li>
-          <li>
-            <a href="./pages/delivery.html">
-              <i class="fa-solid fa-truck fa-xl icon-white"></i>Commande
-            </a>
-          </li>
-          <li>
-            <a href="./pages/login.html">
-              <i class="fa-solid fa-sign-in fa-xl icon-white"></i>Se connecter
-            </a>
-          </li>
-        </ul>
-      </nav> -->
     </header>
     <main class="landing__main page">
       <h1>oFig : L'application numéro 1 dans la vente de figurines</h1>

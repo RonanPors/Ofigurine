@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "vite": "^5.4.1"
+  },
+  "name": "oFigurine",
+  "version": "1.0.0",
+  "description": "Vous vous souvenez de oFig ? Avec les petites figurines ? Bon et bien continuons alors :)",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Ronan",
+  "license": "ISC"
+}
