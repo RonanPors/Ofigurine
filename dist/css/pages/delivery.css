@@ -1,0 +1,148 @@
+.delivery__main {
+  display: flex;
+
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.delivery__main aside {
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: white;
+}
+
+.delivery__main article {
+  font-size: 14px;
+}
+
+.delivery-main__form h3 {
+  color: var(--secondary-color);
+  font-weight: bolder;
+}
+
+.delivery-main__form {
+  margin-block: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow: 1px 1px 5px gray;
+  max-width: 700px;
+  /*margin: auto;*/
+  align-self: center;
+}
+
+.delivery-main__form header {
+  padding: 20px 0;
+}
+
+.delivery-main__inputs-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.delivery-main__delivery-location article {
+  margin: 10px 0;
+}
+
+.delivery-main__options article {
+  margin: 10px 0;
+}
+
+.delivery-main__address article {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.delivery-main__address article input {
+  background-color: var(--third-color);
+  border-bottom: 1px solid black;
+}
+
+.delivery-main__complementary h3 {
+  margin-bottom: 20px;
+}
+
+.delivery-main__complementary textarea {
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  background-color: var(--third-color);
+}
+
+.delivery-main__amount-section {
+  text-align: center;
+  /*padding: 20px;*/
+}
+
+.delivery-main__amount-section > section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px 1px rgba(128, 128, 128, 0.274);
+  align-items: center;
+  border-radius: 5px;
+}
+.delivery-main__amount-section strong {
+  font-size: 30px;
+  color: rgb(217, 82, 82);
+}
+
+.delivery-main__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.delivery-main__footer a {
+  padding: 20px;
+  font-weight: bold;
+  background-color: var(--third-color);
+}
+
+.delivery-main__footer a + a {
+  background-color: #f08080;
+  color: white;
+}
+
+.delivery-main__footer {
+  position: relative;
+}
+
+.delivery-main__footer::after {
+  content: "";
+  background-color: #000;
+  height: 1px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/* je veux 4 façons de changer la couleur 
+    du deuxième bouton sans changer celle du premier
+
+    aucune solution de facilité ne sera 
+    considérée comme bonne
+
+*/
+
+/*-----------------------MEDIA QUERIES--------------------------------*/
+
+
+@media (max-width:425px){
+    /* on gère le cas des téléphones */
+    /* vous allez mettre des règles CSS comme d'habitude*/
+    /* autrement dit des sélecteurs et des déclarations de      propriétés
+        css
+    */
+    .delivery-main__inputs-section {
+        flex-direction: column;
+    }
+    .delivery-main__amount-section strong {
+        font-size: unset;
+      }
+}

@@ -1,0 +1,125 @@
+/* Styles généraux */
+.app__header {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: var(--primary-color);
+  box-shadow: 1px 1px 5px #808080;
+}
+
+/* Section du logo et du titre */
+.app__header > section {
+  display: flex;
+  align-items: center;
+}
+
+.app__header > section > span {
+  letter-spacing: 0.1rem;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.app__header > section > figure {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid white 1px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.app__header > section > figure > img {
+  transform: scale(0.7);
+}
+
+/* Icône du menu burger */
+.menu-toggle {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+}
+
+.burger-menu span {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Menu de navigation */
+.app__header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.app__header ul li {
+  width: 145px;
+  transition: all 500ms ease-in-out;
+}
+
+.app__header a {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  .icon-white {
+    color: white;
+    margin-right: 10px;
+  }
+}
+
+.app__header li:hover > a {
+  text-decoration: underline;
+  transform: scale(1.2);
+  color: black;
+  .icon-white {
+    color: black;
+    margin-right: 10px;
+  }
+}
+
+/*--------------MEDIA QUERIES--------------*/
+/* Styles pour smartphones et tablettes*/
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  #nav-menu {
+    display: none;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100vw;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 0 0 5px 5px;
+    border-top: solid black 1px;
+  }
+
+  #menu-toggle:checked ~ #nav-menu {
+    display: flex;
+  }
+
+  .app__header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .app__header ul li {
+    width: auto;
+  }
+}

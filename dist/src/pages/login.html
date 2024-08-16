@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Boris Rose" />
-    <meta name="description" content="UX/UI Shop par BR" />
-    <meta name="keywords" content="Shop, UX/UI" />
-    <title>Shop | Landing Page</title>
+    <meta
+      name="description"
+      content="Page du Shop de l'Application Shop, figurines de Tintin et Milou"
+    />
+    <meta name="keywords" content="Shop, figurines, Tintin et Milou" />
+    <title>Shop | Login Page</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <link rel="stylesheet" href="/css/fonts/font.css" />
     <link rel="stylesheet" href="/css/base/variables.css" />
     <link rel="stylesheet" href="/css/base/reset.css" />
     <link rel="stylesheet" href="/css/utils/objects.css" />
     <link rel="stylesheet" href="/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="/css/components/form.css" />
     <link rel="stylesheet" href="/css/layout/header.css" />
-    <link rel="stylesheet" href="/css/pages/landing.css" />
+    <!-- LA PAGE CHANGE !!!! donc plus de référence à landing.css -->
+    <link rel="stylesheet" href="/css/pages/login.css" />
     <link rel="stylesheet" href="/css/layout/footer.css" />
     <!-- SCRIPT JS  FONTAWESOME-->
     <script
@@ -40,7 +45,7 @@
       <nav id="nav-menu" role="navigation">
         <ul>
           <li>
-            <a href="./index.html" aria-label="Aller à la page accueil">
+            <a href="../../../index.html" aria-label="Aller à la page accueil">
               <i class="fa-solid fa-home fa-xl icon-white"></i>Accueil
             </a>
           </li>
@@ -62,23 +67,62 @@
               <i class="fa-solid fa-truck fa-xl icon-white"></i>Commande
             </a>
           </li>
-          <li>
-            <a
-              href="/src/pages/login.html"
-              aria-label="Aller à la page de connexion"
-            >
-              <i class="fa-solid fa-sign-in fa-xl icon-white"></i>Se connecter
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
-    <main class="landing__main page">
-      <h1>oFig : L'application numéro 1 dans la vente de figurines</h1>
-      <a href="/src/pages/shop.html"> Voir nos produits </a>
+    <main class="login__main page">
+      <form class="form">
+        <section class="form__inputs">
+          <article>
+            <label for="email"></label>
+            <input
+              id="email"
+              type="text"
+              pattern="[a-z0-9_.]{4,20}[@]{1}[a-z]{2,5}[.]{1}[a-z]{2,4}"
+              placeholder="Entrez votre email"
+              required
+              aria-required="true"
+            />
+          </article>
+
+          <article>
+            <label for="password"></label>
+            <input
+              id="password"
+              type="password"
+              pattern="[a-zA-Z0-9!?_\-.]{10,12}"
+              required
+              placeholder="Entrez votre mot de passe"
+              aria-required="true"
+            />
+          </article>
+
+          <article>
+            <label>
+              <small>maintenir ma session ouverte</small>
+              <input type="checkbox" checked aria-checked="true" />
+            </label>
+          </article>
+          <article>
+            <label for="role"> Vous êtes : </label>
+            <select id="role">
+              <option value="admin">Administrateur</option>
+              <option value="client">Client</option>
+            </select>
+          </article>
+        </section>
+
+        <section class="form__actions">
+          <button type="submit">Valider</button>
+          <button type="reset">Réinitialiser</button>
+        </section>
+        <section>
+          <small>Mot de passe oublié ?<a href="#">Cliquez ici</a></small>
+        </section>
+      </form>
     </main>
     <footer class="app__footer fixed-bottom">
-      <p>L'application n°1 dans la vente de figurines</p>
+      <p>Toutes les images sont sous &copy; Pixabay</p>
     </footer>
   </body>
 </html>

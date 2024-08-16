@@ -1,0 +1,36 @@
+.app__sticker {
+  background-color: var(--primary-color);
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 0 10px 10px 0;
+  position: fixed;
+  top: 16rem;
+  left: 0;
+  opacity: 0;
+  animation: sales 500ms ease-in-out 1000ms forwards;
+}
+
+.app__sticker a {
+  color: var(--text-color-light);
+  text-transform: uppercase;
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 0;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+@keyframes sales {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

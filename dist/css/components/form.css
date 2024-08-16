@@ -1,0 +1,104 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 1px 1px 5px gray;
+  max-width: 500px;
+  min-width: 400px;
+  background-color: var(--forth-color);
+  opacity: 0;
+  animation: down-300 1000ms ease-in-out 1000ms forwards;
+}
+
+form input::placeholder {
+  font-style: italic;
+}
+
+form input:valid {
+  border: solid var(--valid-color);
+}
+
+form input:invalid {
+  border: solid var(--invalid-color);
+}
+
+form article {
+  margin-block: 10px;
+  width: 100%;
+}
+
+form input {
+  border: solid 1px black;
+  width: 100%;
+}
+
+.form__inputs :nth-child(3) label {
+  display: flex;
+  flex-direction: space-between;
+  width: 100%;
+}
+
+.form__inputs :nth-child(3) label small {
+  margin-right: 10px;
+}
+
+.form__inputs :nth-child(3) label input {
+  align-self: center;
+  padding: unset;
+  margin: unset;
+  width: fit-content;
+}
+
+.form__inputs :nth-child(4) label {
+  font-size: 13px;
+}
+
+form :nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+form :nth-child(3),
+form :nth-child(4) {
+  margin-block: 10px;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+form a {
+  position: relative;
+  margin-left: 5px;
+}
+
+form a::after {
+  content: '';
+  background-color: #000;
+  width: 0%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 500ms ease-in-out;
+}
+
+form a:hover::after {
+  width: 100%;
+}
+
+/*----------------------MEDIA QUERIES----------------------------------*/
+
+@media (max-width: 425px) {
+  /* on gère le cas des téléphones */
+  /* vous allez mettre des règles CSS comme d'habitude*/
+  /* autrement dit des sélecteurs et des déclarations de      propriétés
+        css
+    */
+  .form {
+    max-width: unset;
+    min-width: unset;
+  }
+}

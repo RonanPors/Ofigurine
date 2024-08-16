@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Boris Rose" />
+    <meta
+      name="description"
+      content="Page du Shop de l'Application Shop, figurines de Tintin et Milou"
+    />
+    <meta name="keywords" content="Shop, figurines, Tintin et Milou" />
+    <title>oFig | Shop Page</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/css/fonts/font.css" />
+    <link rel="stylesheet" href="/css/base/variables.css" />
+    <link rel="stylesheet" href="/css/base/reset.css" />
+    <link rel="stylesheet" href="/css/utils/objects.css" />
+    <link rel="stylesheet" href="/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="/css/components/spinner.css" />
+    <link rel="stylesheet" href="/css/layout/header.css" />
+    <link rel="stylesheet" href="/css/pages/shop.css" />
+    <link rel="stylesheet" href="/css/layout/footer.css" />
+
+    <!-- SCRIPT JS  FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/3b3c8e71e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div aria-label="outlay du spinner" class="app__spinner">
+      <div class="outer__spinner">
+        <figure class="inner__spinner">
+          <img src="/assets/favicon.png" />
+        </figure>
+      </div>
+      <p>Chargement en cours ...</p>
+    </div>
+    <header class="app__header fixed-top app__header--slow">
+      <section>
+        <figure>
+          <img src="/assets/favicon.png" alt="logo du site oFig" />
+        </figure>
+        <span aria-label="conteneur du titre de l'application"> oFig </span>
+      </section>
+      <!-- Input pour contrôler le menu burger -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav id="nav-menu" role="navigation">
+        <ul>
+          <li>
+            <a href="../../../index.html" aria-label="Aller à la page accueil">
+              <i class="fa-solid fa-home fa-xl icon-white"></i>Accueil
+            </a>
+          </li>
+          <li>
+            <a href="/src/pages/cart.html" aria-label="Acceder au magasin">
+              <i class="fa-solid fa-bag-shopping fa-xl icon-white"></i>Panier
+            </a>
+          </li>
+          <li>
+            <a
+              href="/src/pages/delivery.html"
+              aria-label="Acceder à la commande en cours"
+            >
+              <i class="fa-solid fa-truck fa-xl icon-white"></i>Commande
+            </a>
+          </li>
+          <li>
+            <a
+              href="/src/pages/login.html"
+              aria-label="Aller à la page de connexion"
+            >
+              <i class="fa-solid fa-sign-in fa-xl icon-white"></i>Se connecter
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="shop__main page">
+      <header>
+        <h1>Les figurines sur le thème de Tintin et Milou</h1>
+      </header>
+      <section>
+        <article>
+          <figure>
+            <img
+              src="/assets/images/tintin.jpg"
+              srcset="
+                /assets/images/tintin-small.webp 480w,
+                /assets/images/tintin.webp       800w
+              "
+              sizes="(max-width: 600px) 480px, 800px"
+              loading="lazy"
+              alt="figurine de tintin"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Tintin</span>
+            </figcaption>
+            <span aria-label="promo de la figurine">30%</span>
+          </figure>
+          <section>
+            <h2>Tintin</h2>
+            <p>Tintin durant son aventure les 7 boules de crystal</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>100</span><span>70€</span></section>
+            </button>
+          </section>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="/assets/images/haddock.jpg"
+              srcset="
+                /assets/images/haddock-small.webp 480w,
+                /assets/images/haddock.webp       800w
+              "
+              sizes="(max-width: 600px) 480px, 800px"
+              loading="lazy"
+              alt="figurine du capitaine haddock"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Haddock</span>
+            </figcaption>
+            <span aria-label="promo de la figurine">50%</span>
+          </figure>
+          <section>
+            <h2>Capitain Haddock</h2>
+            <p>Capitain Haddock durant son aventure ...</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>50</span><span>25€</span></section>
+            </button>
+          </section>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="/assets/images/tournesol.jpg"
+              srcset="
+                /assets/images/tournesol-small.webp 480w,
+                /assets/images/tournesol.webp       800w
+              "
+              sizes="(max-width: 600px) 480px, 800px"
+              loading="lazy"
+              alt="figurine du professeur tournesol"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Tournesol</span>
+            </figcaption>
+          </figure>
+          <section>
+            <h2>Triffon Tournesol</h2>
+            <p>Triffon Tournesol durant l'aventure ...</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>50</span><span>25€</span></section>
+            </button>
+          </section>
+        </article>
+
+        <article>
+          <figure>
+            <img
+              src="/assets/images/dupont.webp"
+              srcset="
+                /assets/images/dupont-small.webp 480w,
+                /assets/images/dupont.webp       800w
+              "
+              sizes="(max-width: 600px) 480px, 800px"
+              loading="lazy"
+              alt="figurine des frères duponts"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Dupont et Dupont</span>
+            </figcaption>
+          </figure>
+          <section>
+            <h2>Les Duponts</h2>
+            <p>Les Duponts durant l'aventure ...</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>70</span><span>25€</span></section>
+            </button>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer class="app__footer fixed-bottom app__footer--slow">
+      <p>Toutes les images sont sous &copy; Pixabay</p>
+    </footer>
+  </body>
+</html>
