@@ -1,37 +1,49 @@
-# oFig - Panier
+# oFig
 
-Vous vous souvenez de oFig ? Avec les petites figurines ? Bon et bien continuons alors :) 
+Ce projet a été réalisé dans le cadre d'un challenge de développement où l'objectif était de créer une page avec un formulaire de livraison pour un site e-commerce nommé **oFig**. Le défi consistait à concevoir une interface utilisateur claire et fonctionnelle, en respectant des consignes précises. J'ai développé l'intégralité du projet à partir de zéro, ce qui m'a permis d'explorer et de m'amuser avec différentes techniques, notamment la création d'un **spinner** en utilisant les animations CSS avec les `keyframes`.
 
-## Objectif
+## Objectif du Challenge
 
-Réaliser la page avec le formulaire de livraison du site
+L'objectif principal était de concevoir une page avec un formulaire de livraison complet. Ce formulaire devait inclure :
 
-![page-panier](ressources/resultat-sans-table.png)
+- Des champs de texte pour saisir les informations personnelles (nom, adresse, etc.).
+- Des boutons radio pour sélectionner les options de livraison.
+- Des cases à cocher pour des options supplémentaires.
 
-On s'occupe avant tout du formulaire (_les styles des radios et des checkboxes peuvent varier d'un navigateur à l'autre, on ne va pas les customiser ici_)
+J'ai également ajouté une section bonus pour présenter le contenu du panier sous forme de tableau, avec une personnalisation CSS pour griser une ligne sur deux.
 
-Je vous propose de reprendre le code la boutique fait ensemble, vous aurez images et css de base pour repartir sur de bonnes bases.
+## Réalisation du Projet
 
-Bon courage ;)
+### 1. Formulaire de Livraison
 
-## Bonus
-<details>
-<summary>Rappel : les bonus sont FACULTATIFS</summary>
+J'ai utilisé HTML et CSS pour structurer et styliser le formulaire de manière sémantique, en veillant à respecter les bonnes pratiques pour l'accessibilité et la compatibilité entre les navigateurs.
 
-![bonus](ressources/resultat.png)
+### 2. Tableau pour le Panier
 
-Pour la partie "Votre panier", vous aurez besoin d'utiliser la balise [table](https://developer.mozilla.org/fr/docs/Web/HTML/Element/table) et tous ses copains (`tr`, `td`, `thead`, `tbody`, `tfoot`...)
+Pour la section "Votre panier", j'ai implémenté un tableau HTML en ajoutant des styles CSS qui grisent une ligne sur deux en utilisant la propriété `nth-child()`. Cela apporte une meilleure lisibilité à l'utilisateur.
 
-Vous pouvez vous aider de [cette page](https://developer.mozilla.org/fr/docs/Apprendre/HTML/Tableaux/Basics) pour mieux comprendre comment tout ça s'utilise !
-</details>
+### 3. Animation avec Spinner
 
-## Bonus (encore !)
+Pour le plaisir d'explorer davantage les animations CSS, j'ai ajouté un **spinner** personnalisé. J'ai utilisé les `@keyframes` pour créer une animation fluide qui tourne en boucle, offrant ainsi un indicateur visuel lors des chargements potentiels.
 
-<details>
-<summary>Rappel : les bonus sont toujours FACULTATIFS</summary>
+## Comment utiliser ce projet ?
 
-Trouvez un moyen de griser une ligne sur deux dans le tableau, en une seule instruction CSS !
+### Étapes d'installation
 
-![bonus](ressources/bonus.png)
-</details>
+1. Cloner le dépôt avec le lien SSH
 
+2. Accédez au répertoire du projet :
+
+   ```
+   cd ofig-panier
+   ```
+
+3. Lancer le script de prévisualisation :
+
+   ```
+   npm run preview
+   ```
+
+4. Ouvrir le navigateur et se rendre sur `http://localhost:4173`.
+
+Vous pourrez alors visualiser la page avec le formulaire de livraison, explorer la section "Votre panier", et admirer l'animation du spinner.
